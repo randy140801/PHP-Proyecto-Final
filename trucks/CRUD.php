@@ -16,6 +16,8 @@ function add(){
             mysqli_close($connect);
         }
         else {
+            $message = "Debe seleccionar una imagen para su camion";
+            echo "<script type='text/javascript'>alert('$message');</script>";
             redirect('AddEdit.php');
         }
 }

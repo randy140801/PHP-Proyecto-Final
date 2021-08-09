@@ -1,3 +1,9 @@
+<?php
+if(isset($_COOKIE["ID"])){
+    header("Location: trucks/trucks.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
